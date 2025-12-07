@@ -1,0 +1,23 @@
+{
+  "title": "Change PageUp to Ctrl + Right Arrow",
+  "rules": [
+    {
+      "description": "Map PageUp to Control + Right Arrow",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "page_dn"
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": ["control"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

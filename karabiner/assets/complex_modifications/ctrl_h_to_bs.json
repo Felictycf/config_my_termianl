@@ -1,0 +1,26 @@
+{
+  "title": "Change Control+H to Backspace",
+  "rules": [
+    {
+      "description": "Map Control + H to Backspace",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": ["control"],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_or_backspace"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
