@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F4F6F6;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  background: #277884;
+  padding: 14pt 40pt;
+}
+h1 {
+  color: #FFFFFF;
+  font-size: 20pt;
+  margin: 0;
+}
+.content {
+  padding: 25pt;
+  flex: 1;
+  display: flex;
+  gap: 35pt;
+}
+.framework {
+  background: #FFFFFF;
+  padding: 20pt;
+  border-radius: 6pt;
+  flex: 1;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-top: 4pt solid #5EA8A7;
+}
+.framework h2 {
+  color: #277884;
+  font-size: 20pt;
+  margin: 0 0 12pt 0;
+}
+.framework .badge {
+  background: #5EA8A7;
+  color: #FFFFFF;
+  padding: 4pt 12pt;
+  border-radius: 12pt;
+  font-size: 13pt;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 12pt;
+}
+.framework ul {
+  margin: 0;
+  padding-left: 20pt;
+}
+.framework li {
+  color: #2E4053;
+  font-size: 13pt;
+  margin-bottom: 8pt;
+  line-height: 1.4;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>主要框架</h1>
+</div>
+<div class="content">
+  <div class="framework">
+    <h2>LangChain DeepAgents</h2>
+    <span class="badge">LangGraph</span>
+    <ul>
+      <li>基于 LangGraph 架构构建</li>
+      <li>提供 CLI 工具进行终端操作</li>
+      <li>支持跨会话的持久化记忆</li>
+      <li>强大的社区支持和文档</li>
+    </ul>
+  </div>
+  <div class="framework">
+    <h2>AI-SDK DeepAgent</h2>
+    <span class="badge">事件驱动</span>
+    <ul>
+      <li>四大支柱架构设计</li>
+      <li>事件驱动架构</li>
+      <li>支持流式传输</li>
+      <li>完整的 API 参考</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

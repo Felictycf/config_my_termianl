@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ya --version:*)",
+      "Bash(yazi:*)",
+      "Bash(mkdir:*)",
+      "Bash(/opt/homebrew/bin/ya pack:*)"
+    ],
+    "deny": [],
+    "ask": []
+  },
+  "enabledMcpjsonServers": [
+    "n8n-mcp"
+  ],
+  "enableAllProjectMcpServers": true
+}

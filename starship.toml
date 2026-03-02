@@ -1,0 +1,109 @@
+# ~/.config/starship.toml
+
+# Solarized Dark Bubble Preset
+# 专为 Solarized 配色优化的气泡风格
+
+palette = "solarized"
+
+format = """
+[](fg:base02)\
+$os\
+$username\
+[](fg:base02 bg:base01)\
+$directory\
+[](fg:base01 bg:base00)\
+$git_branch\
+$git_status\
+[](fg:base00 bg:base02)\
+$nodejs\
+$rust\
+$golang\
+$php\
+[](fg:base02 bg:base03)\
+$time\
+[ ](fg:base03)\
+\n$character"""
+
+[palettes.solarized]
+base03  = "#002b36"
+base02  = "#073642"
+base01  = "#586e75"
+base00  = "#657b83"
+base0   = "#839496"
+base1   = "#93a1a1"
+base2   = "#eee8d5"
+base3   = "#fdf6e3"
+yellow  = "#b58900"
+orange  = "#cb4b16"
+red     = "#dc322f"
+magenta = "#d33682"
+violet  = "#6c71c4"
+blue    = "#268bd2"
+cyan    = "#2aa198"
+green   = "#859900"
+
+[os]
+disabled = false
+style = "bg:base02 fg:base3"
+
+[os.symbols]
+Windows = "󰍲"
+Ubuntu = ""
+Macos = ""
+
+[username]
+show_always = true
+style_user = "bg:base02 fg:base3"
+style_root = "bg:base02 fg:red"
+format = '[ $user ]($style)'
+
+[directory]
+style = "fg:base3 bg:base01"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = " "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[git_branch]
+symbol = ""
+style = "bg:base00"
+format = '[[ $symbol $branch ](fg:base3 bg:base00)]($style)'
+
+[git_status]
+style = "bg:base00"
+format = '[[($all_status$ahead_behind )](fg:base3 bg:base00)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:base02"
+format = '[[ $symbol ($version) ](fg:green bg:base02)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:base02"
+format = '[[ $symbol ($version) ](fg:orange bg:base02)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:base02"
+format = '[[ $symbol ($version) ](fg:cyan bg:base02)]($style)'
+
+[php]
+symbol = ""
+style = "bg:base02"
+format = '[[ $symbol ($version) ](fg:violet bg:base02)]($style)'
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:base03"
+format = '[[  $time ](fg:base1 bg:base03)]($style)'
+
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[➜](bold red)"

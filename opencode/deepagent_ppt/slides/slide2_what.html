@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F4F6F6;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  background: #277884;
+  padding: 18pt 40pt;
+}
+h1 {
+  color: #FFFFFF;
+  font-size: 26pt;
+  margin: 0;
+}
+.content {
+  padding: 20pt;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18pt;
+}
+.card {
+  background: #FFFFFF;
+  padding: 18pt;
+  border-radius: 6pt;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.card-title {
+  color: #277884;
+  font-size: 16pt;
+  font-weight: bold;
+  margin: 0 0 10pt 0;
+}
+.card p {
+  color: #2E4053;
+  font-size: 13pt;
+  line-height: 1.3;
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 20pt;
+}
+li {
+  margin-bottom: 5pt;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>什么是 DeepAgent?</h1>
+</div>
+<div class="content">
+  <div class="card">
+    <p class="card-title">定义</p>
+    <p>DeepAgent 是一个用于构建自主 AI 代理的框架,能够执行多步骤推理、动态发现和执行工具、管理可扩展的记忆系统,并自主处理长期任务。</p>
+  </div>
+  <div class="card" style="border-left: 4pt solid #5EA8A7;">
+    <p class="card-title">核心能力</p>
+    <ul>
+      <li>多步骤推理 - 规划并执行复杂工作流程</li>
+      <li>工具系统 - 动态发现并调用所需工具</li>
+      <li>记忆管理 - 分为情景、工作和长期记忆</li>
+      <li>子代理委托 - 生成专门子代理处理不同任务</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

@@ -12,6 +12,10 @@ return {
 				"tailwindcss-language-server",
 				"typescript-language-server",
 				"css-lsp",
+				-- Python
+				"pyright",
+				"black",
+				"ruff",
 			})
 		end,
 	},
@@ -23,6 +27,19 @@ return {
 			inlay_hints = { enabled = false },
 			---@type lspconfig.options
 			servers = {
+				-- Python LSP
+				pyright = {
+					settings = {
+						python = {
+							analysis = {
+								typeCheckingMode = "basic",
+								autoSearchPaths = true,
+								useLibraryCodeForTypes = true,
+								diagnosticMode = "workspace",
+							},
+						},
+					},
+				},
 				cssls = {},
 				tailwindcss = {
 					root_dir = function(...)

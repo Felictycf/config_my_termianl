@@ -8,181 +8,62 @@ unified-delay: true
 hosts:
   time.facebook.com: 17.253.84.125
   time.android.com: 17.253.84.125
-dns:
-  enable: true
-  use-hosts: true
-  nameserver:
-    - 119.29.29.29
-    - 223.5.5.5
-    - 223.6.6.6
-    - tcp://223.5.5.5
-    - tcp://223.6.6.6
-    - tls://dns.google:853
-    - tls://8.8.8.8:853
-    - tls://8.8.4.4:853
-    - tls://dns.alidns.com
-    - tls://223.5.5.5
-    - tls://223.6.6.6
-    - tls://dot.pub
-    - tls://1.12.12.12
-    - tls://120.53.53.53
-    - https://dns.google/dns-query
-    - https://8.8.8.8/dns-query
-    - https://8.8.4.4/dns-query
-    - https://dns.alidns.com/dns-query
-    - https://223.5.5.5/dns-query
-    - https://223.6.6.6/dns-query
-    - https://doh.pub/dns-query
-    - https://1.12.12.12/dns-query
-    - https://120.53.53.53/dns-query
-  default-nameserver:
-    - 119.29.29.29
-    - 223.5.5.5
-    - 223.6.6.6
-    - tcp://119.29.29.29
-    - tcp://223.5.5.5
-    - tcp://223.6.6.6
+Proxy:
+  - name: 您的客户端版本过旧
+    type: socks5
+    server: 127.0.0.1
+    port: 1080
+  - name: 请前往 iKuuu 官网
+    type: socks5
+    server: 127.0.0.1
+    port: 1080
+  - name: 在教程下载最新版客户端
+    type: socks5
+    server: 127.0.0.1
+    port: 1080
+Proxy Group:
+  - {name: 升级提示, type: select, proxies: [您的客户端版本过旧, 请前往 iKuuu 官网, 在教程下载最新版客户端]}
+Rules:
+  - DOMAIN-SUFFIX,time.is,DIRECT
+  - MATCH,DIRECT
 proxies:
-  - {name: 🇭🇰 香港fuwu, server: 38.207.176.75, port: 18786, type: ss, cipher: aes-256-gcm, password: teddysun.com, udp: true}
-  - {name: 🇭🇰 香港S01, server: mxq9g-g06.hk01-ae5.entry.v50307shvkaa.art, port: 19276, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇯🇵 日本S01 | x0.8, server: bgipq-g06.jp01-ae5.entry.v50307shvkaa.art, port: 477, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇭🇰 香港S02 | IEPL, server: 57rzi-g06.hk02-ae5.entry.v50307shvkaa.art, port: 14564, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇯🇵 日本S02 | x0.8, server: kd1r3-g06.jp02-ae5.entry.v50307shvkaa.art, port: 487, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇭🇰 香港S03 | IEPL, server: 3xmtu-g06.hk03-ae5.entry.v50307shvkaa.art, port: 764, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇯🇵 日本S03 | x0.8, server: n6vg1-g06.jp03-ae5.entry.v50307shvkaa.art, port: 492, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇭🇰 香港S04 | IEPL, server: j03rf-g06.hk04-ae5.entry.v50307shvkaa.art, port: 808, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇯🇵 日本S04 | x0.8, server: pdvzv-g06.jp04-ae5.entry.v50307shvkaa.art, port: 497, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇭🇰 香港S05 | IEPL, server: tyjig-g06.hk05-ae5.entry.v50307shvkaa.art, port: 1816, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇯🇵 日本S05 | 下载专用 | x0.01, server: wz509-g06.jp05-vm5.entry.rtysjur.quest, port: 64659, type: vmess, uuid: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港S06 | x0.8, server: vgwbg-g06.hk06-ae5.entry.v50307shvkaa.art, port: 1417, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇯🇵 日本S06 | 下载专用 | x0.01, server: 0tz0g-g06.jp06-vm5.entry.rtysjur.quest, port: 667, type: vmess, uuid: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港S07 | x0.8, server: 3l34z-g06.hk07-ae5.entry.v50307shvkaa.art, port: 1424, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇯🇵 日本S07 | x0.8, server: 11eq9-g06.jp07-ae5.entry.v50307shvkaa.art, port: 14009, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇭🇰 香港S08 | x0.8, server: t18dg-g06.hk08-ae5.entry.v50307shvkaa.art, port: 18647, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇯🇵 日本S08 | x0.8, server: qj3fe-g06.jp08-ae5.entry.v50307shvkaa.art, port: 12547, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇭🇰 香港S09 | IEPL, server: kozl9-g06.hk09-vm5.entry.v50307shvkaa.art, port: 15269, type: vmess, uuid: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 日本S09 | x0.8, server: cywqs-g06.jp09-ae5.entry.v50307shvkaa.art, port: 11162, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇭🇰 香港S10 | IEPL, server: e6tiy-g06.hk10-vm5.entry.v50307shvkaa.art, port: 13487, type: vmess, uuid: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: bgp-01-10.entry-0.chinasnow.net}}, udp: true}
-  - {name: 🇯🇵 日本S10 | x0.8, server: 9kt2e-g06.jp10-ae5.entry.v50307shvkaa.art, port: 16528, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇭🇰 香港S11 | IEPL, server: i3nz2-g06.hk11-vm5.entry.v50307shvkaa.art, port: 579, type: vmess, uuid: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tutorial/iphone13.m3u8, headers: {Host: bgp-01-11.entry-0.chinasnow.net}}, udp: true}
-  - {name: 🇯🇵 日本S11 | x0.8, server: ox6yb-g06.jp11-ae5.entry.v50307shvkaa.art, port: 17745, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇯🇵 日本S12 | IEPL | 测试, server: u825m-g06.jp12-ae5.entry.v50307shvkaa.art, port: 502, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇸🇬 新加坡S01, server: 4fyba-g06.sg01-ae5.entry.v50307shvkaa.art, port: 20004, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇸🇬 新加坡S02, server: h947k-g06.sg02-ae5.entry.v50307shvkaa.art, port: 20079, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇸🇬 新加坡S03 | IEPL | x2, server: uf50l-g06.sg03-ae5.entry.v50307shvkaa.art, port: 20084, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇨🇳 台湾S01 | IEPL | x2, server: tnb30-g06.tw01-ae5.entry.v50307shvkaa.art, port: 20009, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇺🇲 美国S01, server: e1fjc-g06.us01-ae5.entry.v50307shvkaa.art, port: 20014, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇺🇲 美国S02, server: abvm4-g06.us02-ae5.entry.v50307shvkaa.art, port: 20019, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇬🇧 英国S01, server: edr6i-g06.gb01-ae5.entry.v50307shvkaa.art, port: 20024, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇦🇷 阿根廷S01, server: 7tjqb-g06.ar01-ae5.entry.v50307shvkaa.art, port: 20029, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇷🇺 俄罗斯S01, server: rq7hy-g06.ru01-ae5.entry.v50307shvkaa.art, port: 20034, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇹🇷 土耳其S01, server: wy18q-g06.tr01-ae5.entry.v50307shvkaa.art, port: 20039, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇰🇷 韩国S01, server: tqapa-g06.kr01-ae5.entry.v50307shvkaa.art, port: 20044, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇮🇳 印度S01, server: avmoh-g06.in01-ae5.entry.v50307shvkaa.art, port: 20049, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇩🇪 德国S01, server: t355c-g06.de01-ae5.entry.v50307shvkaa.art, port: 20054, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇨🇦 加拿大S01, server: islh7-g06.ca01-ae5.entry.v50307shvkaa.art, port: 20059, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇦🇺 澳大利亚S01, server: 06j8m-g06.au01-ae5.entry.v50307shvkaa.art, port: 20064, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇫🇷 法国S01, server: ildea-g06.fr01-ae5.entry.v50307shvkaa.art, port: 20069, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇺🇦 乌克兰S01, server: vb3ip-g06.ua01-ae5.entry.v50307shvkaa.art, port: 20074, type: ss, cipher: aes-256-gcm, password: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, udp: true}
-  - {name: 🇯🇵 免费-日本1-Ver.6, server: 19ls0-g06.jp01-0986-vm0.entry.fr0307a.art, port: 21586, type: vmess, uuid: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 免费-日本2-Ver.7, server: 9bgg7-g06.jp02-9a99-vm0.entry.fr0307a.art, port: 11778, type: vmess, uuid: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 免费-日本3-Ver.6, server: 2wrp0-g06.jp03-7d22-vm0.entry.fr0307a.art, port: 21586, type: vmess, uuid: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 免费-日本4-Ver.7, server: 467ep-g06.jp04-3771-vm0.entry.fr0307a.art, port: 449, type: vmess, uuid: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 免费-日本5-Ver.8, server: ufhhv-g06.jp05-6786-vm0.entry.fr0307a.art, port: 46487, type: vmess, uuid: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 免费-日本6-Ver.7, server: x1ud8-g06.jp06-7c5a-vm0.entry.fr0307a.art, port: 28788, type: vmess, uuid: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 免费-日本7-Ver.1, server: 19oxm-g06.jp07-1f28-vm0.entry.fr0307a.art, port: 28788, type: vmess, uuid: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 免费-日本1-Ver.7, server: 4qfktk8-g06.jp01-nn-vm0.entry.fr0528.art, port: 21586, type: vmess, uuid: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 免费-日本2-Ver.8, server: 4q3x8k8-g06.jp02-e3-vm0.entry.fr0528.art, port: 11778, type: vmess, uuid: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 免费-日本3-Ver.7, server: eaim85u-g06.jp03-j7-vm0.entry.fr0528.art, port: 21586, type: vmess, uuid: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 免费-日本4-Ver.8, server: 0q3k1z7-g06.jp04-1d-vm0.entry.fr0528.art, port: 449, type: vmess, uuid: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 免费-日本5-Ver.9, server: pq3mhze-g06.jp05-h6-vm0.entry.fr0528.art, port: 46487, type: vmess, uuid: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 免费-日本6-Ver.8, server: pqix1ze-g06.jp06-jz-vm0.entry.fr0528.art, port: 28788, type: vmess, uuid: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 免费-日本7-Ver.2, server: paue1ke-g06.jp07-sh-vm0.entry.fr0528.art, port: 28788, type: vmess, uuid: 2caaeb15-52b8-3c60-afa7-9a6157ae42db, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🔰 选择节点
     type: select
     proxies:
-      - 🇭🇰 香港fuwu
-      - 🇭🇰 香港S01
-      - 🇯🇵 日本S01 | x0.8
-      - 🇭🇰 香港S02 | IEPL
-      - 🇯🇵 日本S02 | x0.8
-      - 🇭🇰 香港S03 | IEPL
-      - 🇯🇵 日本S03 | x0.8
-      - 🇭🇰 香港S04 | IEPL
-      - 🇯🇵 日本S04 | x0.8
-      - 🇭🇰 香港S05 | IEPL
-      - 🇯🇵 日本S05 | 下载专用 | x0.01
-      - 🇭🇰 香港S06 | x0.8
-      - 🇯🇵 日本S06 | 下载专用 | x0.01
-      - 🇭🇰 香港S07 | x0.8
-      - 🇯🇵 日本S07 | x0.8
-      - 🇭🇰 香港S08 | x0.8
-      - 🇯🇵 日本S08 | x0.8
-      - 🇭🇰 香港S09 | IEPL
-      - 🇯🇵 日本S09 | x0.8
-      - 🇭🇰 香港S10 | IEPL
-      - 🇯🇵 日本S10 | x0.8
-      - 🇭🇰 香港S11 | IEPL
-      - 🇯🇵 日本S11 | x0.8
-      - 🇯🇵 日本S12 | IEPL | 测试
-      - 🇸🇬 新加坡S01
-      - 🇸🇬 新加坡S02
-      - 🇸🇬 新加坡S03 | IEPL | x2
-      - 🇨🇳 台湾S01 | IEPL | x2
-      - 🇺🇲 美国S01
-      - 🇺🇲 美国S02
-      - 🇬🇧 英国S01
-      - 🇦🇷 阿根廷S01
-      - 🇷🇺 俄罗斯S01
-      - 🇹🇷 土耳其S01
-      - 🇰🇷 韩国S01
-      - 🇮🇳 印度S01
-      - 🇩🇪 德国S01
-      - 🇨🇦 加拿大S01
-      - 🇦🇺 澳大利亚S01
-      - 🇫🇷 法国S01
-      - 🇺🇦 乌克兰S01
-      - 🇯🇵 免费-日本1-Ver.6
-      - 🇯🇵 免费-日本2-Ver.7
-      - 🇯🇵 免费-日本3-Ver.6
-      - 🇯🇵 免费-日本4-Ver.7
-      - 🇯🇵 免费-日本5-Ver.8
-      - 🇯🇵 免费-日本6-Ver.7
-      - 🇯🇵 免费-日本7-Ver.1
+      - 🇯🇵 免费-日本1-Ver.7
+      - 🇯🇵 免费-日本2-Ver.8
+      - 🇯🇵 免费-日本3-Ver.7
+      - 🇯🇵 免费-日本4-Ver.8
+      - 🇯🇵 免费-日本5-Ver.9
+      - 🇯🇵 免费-日本6-Ver.8
+      - 🇯🇵 免费-日本7-Ver.2
       - DIRECT
   - name: 🌏 爱奇艺&哔哩哔哩
     type: select
     proxies:
       - DIRECT
-      - 🇭🇰 香港S01
-      - 🇭🇰 香港S02 | IEPL
-      - 🇭🇰 香港S03 | IEPL
-      - 🇭🇰 香港S04 | IEPL
-      - 🇭🇰 香港S05 | IEPL
-      - 🇭🇰 香港S06 | x0.8
-      - 🇭🇰 香港S07 | x0.8
-      - 🇭🇰 香港S08 | x0.8
-      - 🇭🇰 香港S09 | IEPL
-      - 🇭🇰 香港S10 | IEPL
-      - 🇭🇰 香港S11 | IEPL
-      - 🇨🇳 台湾S01 | IEPL | x2
   - name: 📺 动画疯
     type: select
     proxies:
       - 🔰 选择节点
-      - 🇨🇳 台湾S01 | IEPL | x2
       - DIRECT
   - name: 🎮 Steam 登录/下载
     type: select
     proxies:
       - DIRECT
       - 🔰 选择节点
-      - 🇦🇷 阿根廷S01
-      - 🇷🇺 俄罗斯S01
-      - 🇹🇷 土耳其S01
-      - 🇮🇳 印度S01
   - name: 🎮 Steam 商店/社区
     type: select
     proxies:
       - 🔰 选择节点
-      - 🇦🇷 阿根廷S01
-      - 🇷🇺 俄罗斯S01
-      - 🇹🇷 土耳其S01
-      - 🇮🇳 印度S01
       - DIRECT
   - name: 🌩️ Cloudflare
     type: select
@@ -194,36 +75,18 @@ proxy-groups:
     proxies:
       - 🔰 选择节点
       - DIRECT
-      - 🇯🇵 日本S01 | x0.8
-      - 🇯🇵 日本S02 | x0.8
-      - 🇯🇵 日本S03 | x0.8
-      - 🇯🇵 日本S04 | x0.8
-      - 🇯🇵 日本S05 | 下载专用 | x0.01
-      - 🇯🇵 日本S06 | 下载专用 | x0.01
-      - 🇯🇵 日本S07 | x0.8
-      - 🇯🇵 日本S08 | x0.8
-      - 🇯🇵 日本S09 | x0.8
-      - 🇯🇵 日本S10 | x0.8
-      - 🇯🇵 日本S11 | x0.8
-      - 🇯🇵 日本S12 | IEPL | 测试
-      - 🇯🇵 免费-日本1-Ver.6
-      - 🇯🇵 免费-日本2-Ver.7
-      - 🇯🇵 免费-日本3-Ver.6
-      - 🇯🇵 免费-日本4-Ver.7
-      - 🇯🇵 免费-日本5-Ver.8
-      - 🇯🇵 免费-日本6-Ver.7
-      - 🇯🇵 免费-日本7-Ver.1
-      - 🇭🇰 香港S01
-      - 🇭🇰 香港S02 | IEPL
-      - 🇭🇰 香港S03 | IEPL
-      - 🇭🇰 香港S04 | IEPL
-      - 🇭🇰 香港S05 | IEPL
-      - 🇭🇰 香港S06 | x0.8
-      - 🇭🇰 香港S07 | x0.8
-      - 🇭🇰 香港S08 | x0.8
-      - 🇭🇰 香港S09 | IEPL
-      - 🇭🇰 香港S10 | IEPL
-      - 🇭🇰 香港S11 | IEPL
+      - 🇯🇵 免费-日本1-Ver.7
+      - 🇯🇵 免费-日本2-Ver.8
+      - 🇯🇵 免费-日本3-Ver.7
+      - 🇯🇵 免费-日本4-Ver.8
+      - 🇯🇵 免费-日本5-Ver.9
+      - 🇯🇵 免费-日本6-Ver.8
+      - 🇯🇵 免费-日本7-Ver.2
+  - name: 🎓学术网站
+    type: select
+    proxies:
+      - DIRECT
+      - 🔰 选择节点
   - name: 🇨🇳 国内网站
     type: select
     proxies:
@@ -329,6 +192,23 @@ rules:
  - DOMAIN-SUFFIX,spoprod-a.akamaihd.net,☁️ OneDrive
  - DOMAIN-SUFFIX,storage.live.com,☁️ OneDrive
  - DOMAIN-SUFFIX,storage.msn.com,☁️ OneDrive
+ - DOMAIN-SUFFIX,webofscience.com,🎓学术网站
+ - DOMAIN-SUFFIX,sciencedirect.com,🎓学术网站
+ - DOMAIN-SUFFIX,webofknowledge.com,🎓学术网站
+ - DOMAIN-SUFFIX,clarivate.com,🎓学术网站
+ - DOMAIN-SUFFIX,taylorandfrancis.com,🎓学术网站
+ - DOMAIN-SUFFIX,dl.acm.org,🎓学术网站
+ - DOMAIN,acm-prod.disqus.com,🎓学术网站
+ - DOMAIN-SUFFIX,sciencedirectassets.com,🎓学术网站
+ - DOMAIN-SUFFIX,readspeaker.com,🎓学术网站
+ - DOMAIN-SUFFIX,pubmed.ncbi.nlm.nih.gov,🎓学术网站
+ - DOMAIN-SUFFIX,ieee.org,🎓学术网站
+ - DOMAIN-SUFFIX,nature.com,🎓学术网站
+ - DOMAIN-SUFFIX,elsevier.com,🎓学术网站
+ - DOMAIN-SUFFIX,tandfonline.com,🎓学术网站
+ - DOMAIN-SUFFIX,springer.com,🎓学术网站
+ - DOMAIN-SUFFIX,onlinelibrary.wiley.com,🎓学术网站
+ - DOMAIN-SUFFIX,taylorfrancis.com,🎓学术网站
  - DST-PORT,25,DIRECT
  - DST-PORT,57,DIRECT
  - DST-PORT,109,DIRECT
@@ -365,6 +245,7 @@ rules:
  - DOMAIN,epicgames-download7.akamaized.net,DIRECT
  - DOMAIN,epicgames-download8.akamaized.net,DIRECT
  - DOMAIN,epicgames-download9.akamaized.net,DIRECT
+ - DOMAIN,safebrowsing.googleapis.com,DIRECT
  - DOMAIN-SUFFIX,t.me,🔰 选择节点
  - DOMAIN-SUFFIX,tdesktop.com,🔰 选择节点
  - DOMAIN-SUFFIX,telegra.ph,🔰 选择节点
@@ -7369,6 +7250,7 @@ rules:
  - DOMAIN-SUFFIX,vikacg.com,🔰 选择节点
  - DOMAIN-SUFFIX,picjs.xyz,🔰 选择节点
  - DOMAIN-SUFFIX,sukebei.nyaa.si,🔰 选择节点
+ - DOMAIN,api-jooxtt.sanook.com,🔰 选择节点
  - DOMAIN-KEYWORD,nikke-,🔰 选择节点
  - DOMAIN-SUFFIX,intlgame.com,🔰 选择节点
  - DOMAIN-SUFFIX,appsflyer.com,🔰 选择节点
@@ -7387,9 +7269,17 @@ rules:
  - DOMAIN,openaicomproductionae4b.blob.core.windows.net,🔰 选择节点
  - DOMAIN,production-openaicom-storage.azureedge.net,🔰 选择节点
  - DOMAIN-SUFFIX,sifangclub.com,🔰 选择节点
+ - DOMAIN-SUFFIX,trustwallet.com,🔰 选择节点
  - DOMAIN-SUFFIX,missav.ws,🔰 选择节点
  - DOMAIN-SUFFIX,missav.ai,🔰 选择节点
- - DOMAIN,api-jooxtt.sanook.com,🔰 选择节点
+ - DOMAIN-SUFFIX,ipleak.net,🔰 选择节点
+ - DOMAIN-SUFFIX,surfsharkdns.com,🔰 选择节点
+ - DOMAIN-SUFFIX,ip-api.com,🔰 选择节点
+ - DOMAIN-SUFFIX,dns-detect.alicdn.com,🔰 选择节点
+ - DOMAIN-SUFFIX,browserleaks.org,🔰 选择节点
+ - DOMAIN-SUFFIX,browserleaks.net,🔰 选择节点
+ - DOMAIN-SUFFIX,browserleaks.com,🔰 选择节点
+ - DOMAIN-SUFFIX,u.fastly-analytics.com,🔰 选择节点
  - DOMAIN-SUFFIX,airhorn.solutions,🔰 选择节点
  - DOMAIN-SUFFIX,airhornbot.com,🔰 选择节点
  - DOMAIN-SUFFIX,bigbeans.solutions,🔰 选择节点
@@ -7502,6 +7392,7 @@ rules:
  - DOMAIN-SUFFIX,amap.com,🇨🇳 国内网站
  - DOMAIN-SUFFIX,autonavi.com,🇨🇳 国内网站
  - DOMAIN-SUFFIX,dingtalk.com,🇨🇳 国内网站
+ - DOMAIN-SUFFIX,dingtalkapps.com,🇨🇳 国内网站
  - DOMAIN-SUFFIX,ele.me,🇨🇳 国内网站
  - DOMAIN-SUFFIX,hichina.com,🇨🇳 国内网站
  - DOMAIN-SUFFIX,mmstat.com,🇨🇳 国内网站
@@ -8107,15 +7998,15 @@ rules:
  - DOMAIN-SUFFIX,sda1.dev,🇨🇳 国内网站
  - DOMAIN-KEYWORD,ikandy,🇨🇳 国内网站
  - DOMAIN-SUFFIX,88mv.org,🇨🇳 国内网站
- - DOMAIN-SUFFIX,webofscience.com,🇨🇳 国内网站
- - DOMAIN-SUFFIX,sciencedirect.com,🇨🇳 国内网站
- - DOMAIN-SUFFIX,webofknowledge.com,🇨🇳 国内网站
- - DOMAIN-SUFFIX,clarivate.com,🇨🇳 国内网站
  - DOMAIN,worksaccs.atlassian.net,🇨🇳 国内网站
  - DOMAIN-SUFFIX,atlassian.com,🇨🇳 国内网站
  - DOMAIN-SUFFIX,wynd.network,🇨🇳 国内网站
  - DOMAIN-SUFFIX,getgrass.io,🇨🇳 国内网站
  - DOMAIN-SUFFIX,x6g.com,🇨🇳 国内网站
+ - DOMAIN-SUFFIX,aiseet.atianqi.com,🇨🇳 国内网站
+ - DOMAIN,gfcn-game.gw.merge.sunborngame.com,🇨🇳 国内网站
+ - DOMAIN,gfcn-transitheart-gw.sunborngame.com,🇨🇳 国内网站
+ - DOMAIN,track-cn.sunborngame.com,🇨🇳 国内网站
  - DOMAIN-SUFFIX,cn-north-4.myhuaweicloud.com,🇨🇳 国内网站
  - DOMAIN-SUFFIX,cn-north-1.myhuaweicloud.com,🇨🇳 国内网站
  - DOMAIN-SUFFIX,cn-north-9.myhuaweicloud.com,🇨🇳 国内网站
@@ -9792,6 +9683,240 @@ rules:
  - IP-CIDR,221.228.32.13/32,🔰 选择节点
  - IP-CIDR,106.74.25.198/32,🔰 选择节点
  - IP-CIDR,183.192.65.101/32,🔰 选择节点
+ - IP-CIDR,124.236.16.201/32,🔰 选择节点
+ - IP-CIDR,182.43.124.6/32,🔰 选择节点
+ - IP-CIDR,4.78.139.0/24,🔰 选择节点
+ - IP-CIDR,8.7.198.0/24,🔰 选择节点
+ - IP-CIDR,11.45.1.0/24,🔰 选择节点
+ - IP-CIDR,23.101.24.0/24,🔰 选择节点
+ - IP-CIDR,23.225.141.0/24,🔰 选择节点
+ - IP-CIDR,23.234.30.0/24,🔰 选择节点
+ - IP-CIDR,31.13.64.0/20,🔰 选择节点
+ - IP-CIDR,31.13.80.0/21,🔰 选择节点
+ - IP-CIDR,31.13.88.0/24,🔰 选择节点
+ - IP-CIDR,31.13.90.0/23,🔰 选择节点
+ - IP-CIDR,31.13.92.0/22,🔰 选择节点
+ - IP-CIDR,31.13.96.0/23,🔰 选择节点
+ - IP-CIDR,31.13.106.0/24,🔰 选择节点
+ - IP-CIDR,31.13.112.0/24,🔰 选择节点
+ - IP-CIDR,38.121.72.0/24,🔰 选择节点
+ - IP-CIDR,39.109.122.0/24,🔰 选择节点
+ - IP-CIDR,43.226.16.0/24,🔰 选择节点
+ - IP-CIDR,45.77.186.0/24,🔰 选择节点
+ - IP-CIDR,45.114.11.0/24,🔰 选择节点
+ - IP-CIDR,46.82.174.0/24,🔰 选择节点
+ - IP-CIDR,47.88.58.0/24,🔰 选择节点
+ - IP-CIDR,50.23.209.0/24,🔰 选择节点
+ - IP-CIDR,50.87.93.0/24,🔰 选择节点
+ - IP-CIDR,50.117.117.0/24,🔰 选择节点
+ - IP-CIDR,52.58.1.0/24,🔰 选择节点
+ - IP-CIDR,52.175.9.0/24,🔰 选择节点
+ - IP-CIDR,54.89.135.0/24,🔰 选择节点
+ - IP-CIDR,54.234.18.0/24,🔰 选择节点
+ - IP-CIDR,54.245.22.0/24,🔰 选择节点
+ - IP-CIDR,59.24.3.0/24,🔰 选择节点
+ - IP-CIDR,59.188.250.0/24,🔰 选择节点
+ - IP-CIDR,64.13.192.0/24,🔰 选择节点
+ - IP-CIDR,64.13.232.0/24,🔰 选择节点
+ - IP-CIDR,65.49.26.0/24,🔰 选择节点
+ - IP-CIDR,65.49.68.0/24,🔰 选择节点
+ - IP-CIDR,66.220.146.0/23,🔰 选择节点
+ - IP-CIDR,66.220.148.0/23,🔰 选择节点
+ - IP-CIDR,66.220.151.0/24,🔰 选择节点
+ - IP-CIDR,66.220.152.0/24,🔰 选择节点
+ - IP-CIDR,66.220.155.0/24,🔰 选择节点
+ - IP-CIDR,66.220.158.0/24,🔰 选择节点
+ - IP-CIDR,67.15.100.0/24,🔰 选择节点
+ - IP-CIDR,67.15.129.0/24,🔰 选择节点
+ - IP-CIDR,67.228.102.0/24,🔰 选择节点
+ - IP-CIDR,67.228.235.0/24,🔰 选择节点
+ - IP-CIDR,67.230.169.0/24,🔰 选择节点
+ - IP-CIDR,69.30.25.0/24,🔰 选择节点
+ - IP-CIDR,69.50.221.0/24,🔰 选择节点
+ - IP-CIDR,69.63.176.0/24,🔰 选择节点
+ - IP-CIDR,69.63.178.0/24,🔰 选择节点
+ - IP-CIDR,69.63.180.0/23,🔰 选择节点
+ - IP-CIDR,69.63.184.0/24,🔰 选择节点
+ - IP-CIDR,69.63.186.0/23,🔰 选择节点
+ - IP-CIDR,69.63.189.0/24,🔰 选择节点
+ - IP-CIDR,69.63.190.0/24,🔰 选择节点
+ - IP-CIDR,69.162.134.0/24,🔰 选择节点
+ - IP-CIDR,69.171.224.0/23,🔰 选择节点
+ - IP-CIDR,69.171.227.0/24,🔰 选择节点
+ - IP-CIDR,69.171.228.0/23,🔰 选择节点
+ - IP-CIDR,69.171.230.0/24,🔰 选择节点
+ - IP-CIDR,69.171.232.0/22,🔰 选择节点
+ - IP-CIDR,69.171.237.0/24,🔰 选择节点
+ - IP-CIDR,69.171.239.0/24,🔰 选择节点
+ - IP-CIDR,69.171.242.0/24,🔰 选择节点
+ - IP-CIDR,69.171.244.0/22,🔰 选择节点
+ - IP-CIDR,69.171.248.0/24,🔰 选择节点
+ - IP-CIDR,69.197.153.0/24,🔰 选择节点
+ - IP-CIDR,74.86.3.0/24,🔰 选择节点
+ - IP-CIDR,74.86.12.0/24,🔰 选择节点
+ - IP-CIDR,74.86.17.0/24,🔰 选择节点
+ - IP-CIDR,74.86.118.0/24,🔰 选择节点
+ - IP-CIDR,74.86.142.0/24,🔰 选择节点
+ - IP-CIDR,74.86.151.0/24,🔰 选择节点
+ - IP-CIDR,74.86.226.0/24,🔰 选择节点
+ - IP-CIDR,74.86.228.0/24,🔰 选择节点
+ - IP-CIDR,75.126.2.0/24,🔰 选择节点
+ - IP-CIDR,75.126.33.0/24,🔰 选择节点
+ - IP-CIDR,75.126.115.0/24,🔰 选择节点
+ - IP-CIDR,75.126.124.0/24,🔰 选择节点
+ - IP-CIDR,75.126.135.0/24,🔰 选择节点
+ - IP-CIDR,75.126.150.0/24,🔰 选择节点
+ - IP-CIDR,75.126.164.0/24,🔰 选择节点
+ - IP-CIDR,75.126.215.0/24,🔰 选择节点
+ - IP-CIDR,78.16.49.0/24,🔰 选择节点
+ - IP-CIDR,80.87.199.0/24,🔰 选择节点
+ - IP-CIDR,88.191.249.0/24,🔰 选择节点
+ - IP-CIDR,88.191.253.0/24,🔰 选择节点
+ - IP-CIDR,93.46.8.0/24,🔰 选择节点
+ - IP-CIDR,93.179.102.0/24,🔰 选择节点
+ - IP-CIDR,96.44.137.0/24,🔰 选择节点
+ - IP-CIDR,98.159.108.0/24,🔰 选择节点
+ - IP-CIDR,103.39.76.0/24,🔰 选择节点
+ - IP-CIDR,103.42.176.0/24,🔰 选择节点
+ - IP-CIDR,103.56.16.0/24,🔰 选择节点
+ - IP-CIDR,103.73.161.0/24,🔰 选择节点
+ - IP-CIDR,103.97.3.0/24,🔰 选择节点
+ - IP-CIDR,103.97.176.0/24,🔰 选择节点
+ - IP-CIDR,103.200.30.0/23,🔰 选择节点
+ - IP-CIDR,103.214.168.0/24,🔰 选择节点
+ - IP-CIDR,103.223.122.0/24,🔰 选择节点
+ - IP-CIDR,103.226.246.0/24,🔰 选择节点
+ - IP-CIDR,103.228.130.0/24,🔰 选择节点
+ - IP-CIDR,103.230.123.0/24,🔰 选择节点
+ - IP-CIDR,103.240.180.0/24,🔰 选择节点
+ - IP-CIDR,103.240.182.0/24,🔰 选择节点
+ - IP-CIDR,103.246.246.0/24,🔰 选择节点
+ - IP-CIDR,103.252.114.0/23,🔰 选择节点
+ - IP-CIDR,104.16.251.0/24,🔰 选择节点
+ - IP-CIDR,104.16.252.0/24,🔰 选择节点
+ - IP-CIDR,104.23.124.0/23,🔰 选择节点
+ - IP-CIDR,104.31.142.0/23,🔰 选择节点
+ - IP-CIDR,104.244.42.0/23,🔰 选择节点
+ - IP-CIDR,104.244.45.0/24,🔰 选择节点
+ - IP-CIDR,104.244.46.0/24,🔰 选择节点
+ - IP-CIDR,107.181.166.0/24,🔰 选择节点
+ - IP-CIDR,108.160.161.0/24,🔰 选择节点
+ - IP-CIDR,108.160.162.0/23,🔰 选择节点
+ - IP-CIDR,108.160.165.0/24,🔰 选择节点
+ - IP-CIDR,108.160.166.0/23,🔰 选择节点
+ - IP-CIDR,108.160.169.0/24,🔰 选择节点
+ - IP-CIDR,108.160.170.0/24,🔰 选择节点
+ - IP-CIDR,108.160.172.0/23,🔰 选择节点
+ - IP-CIDR,111.243.214.0/24,🔰 选择节点
+ - IP-CIDR,114.43.24.0/24,🔰 选择节点
+ - IP-CIDR,115.126.100.0/24,🔰 选择节点
+ - IP-CIDR,116.89.243.0/24,🔰 选择节点
+ - IP-CIDR,118.107.180.0/24,🔰 选择节点
+ - IP-CIDR,118.184.26.0/24,🔰 选择节点
+ - IP-CIDR,118.184.78.0/24,🔰 选择节点
+ - IP-CIDR,118.193.202.0/24,🔰 选择节点
+ - IP-CIDR,118.193.240.0/24,🔰 选择节点
+ - IP-CIDR,119.28.87.0/24,🔰 选择节点
+ - IP-CIDR,122.10.85.0/24,🔰 选择节点
+ - IP-CIDR,122.248.226.0/24,🔰 选择节点
+ - IP-CIDR,124.11.210.0/24,🔰 选择节点
+ - IP-CIDR,128.121.146.0/24,🔰 选择节点
+ - IP-CIDR,128.121.243.0/24,🔰 选择节点
+ - IP-CIDR,128.242.240.0/24,🔰 选择节点
+ - IP-CIDR,128.242.245.0/24,🔰 选择节点
+ - IP-CIDR,128.242.250.0/24,🔰 选择节点
+ - IP-CIDR,130.211.15.0/24,🔰 选择节点
+ - IP-CIDR,147.75.95.0/24,🔰 选择节点
+ - IP-CIDR,148.163.48.0/24,🔰 选择节点
+ - IP-CIDR,150.107.3.0/24,🔰 选择节点
+ - IP-CIDR,151.101.77.0/24,🔰 选择节点
+ - IP-CIDR,154.83.14.0/23,🔰 选择节点
+ - IP-CIDR,154.85.102.0/24,🔰 选择节点
+ - IP-CIDR,154.92.16.0/24,🔰 选择节点
+ - IP-CIDR,156.233.67.0/24,🔰 选择节点
+ - IP-CIDR,157.240.0.0/22,🔰 选择节点
+ - IP-CIDR,157.240.6.0/23,🔰 选择节点
+ - IP-CIDR,157.240.8.0/22,🔰 选择节点
+ - IP-CIDR,157.240.12.0/23,🔰 选择节点
+ - IP-CIDR,157.240.15.0/24,🔰 选择节点
+ - IP-CIDR,157.240.16.0/23,🔰 选择节点
+ - IP-CIDR,157.240.18.0/24,🔰 选择节点
+ - IP-CIDR,157.240.20.0/23,🔰 选择节点
+ - IP-CIDR,159.65.107.0/24,🔰 选择节点
+ - IP-CIDR,159.106.121.0/24,🔰 选择节点
+ - IP-CIDR,159.138.20.0/24,🔰 选择节点
+ - IP-CIDR,162.125.1.0/24,🔰 选择节点
+ - IP-CIDR,162.125.2.0/24,🔰 选择节点
+ - IP-CIDR,162.125.6.0/23,🔰 选择节点
+ - IP-CIDR,162.125.8.0/24,🔰 选择节点
+ - IP-CIDR,162.125.17.0/24,🔰 选择节点
+ - IP-CIDR,162.125.18.0/24,🔰 选择节点
+ - IP-CIDR,162.125.32.0/24,🔰 选择节点
+ - IP-CIDR,162.125.34.0/24,🔰 选择节点
+ - IP-CIDR,162.125.80.0/24,🔰 选择节点
+ - IP-CIDR,162.125.82.0/23,🔰 选择节点
+ - IP-CIDR,162.220.12.0/24,🔰 选择节点
+ - IP-CIDR,168.143.162.0/24,🔰 选择节点
+ - IP-CIDR,168.143.171.0/24,🔰 选择节点
+ - IP-CIDR,173.208.182.0/24,🔰 选择节点
+ - IP-CIDR,173.231.12.0/24,🔰 选择节点
+ - IP-CIDR,173.234.53.0/24,🔰 选择节点
+ - IP-CIDR,173.236.182.0/24,🔰 选择节点
+ - IP-CIDR,173.236.212.0/24,🔰 选择节点
+ - IP-CIDR,173.244.209.0/24,🔰 选择节点
+ - IP-CIDR,173.244.217.0/24,🔰 选择节点
+ - IP-CIDR,173.252.73.0/24,🔰 选择节点
+ - IP-CIDR,173.252.88.0/24,🔰 选择节点
+ - IP-CIDR,173.252.100.0/24,🔰 选择节点
+ - IP-CIDR,173.252.102.0/23,🔰 选择节点
+ - IP-CIDR,173.252.105.0/24,🔰 选择节点
+ - IP-CIDR,173.252.108.0/24,🔰 选择节点
+ - IP-CIDR,173.252.110.0/24,🔰 选择节点
+ - IP-CIDR,173.252.248.0/24,🔰 选择节点
+ - IP-CIDR,173.255.209.0/24,🔰 选择节点
+ - IP-CIDR,173.255.213.0/24,🔰 选择节点
+ - IP-CIDR,174.36.196.0/24,🔰 选择节点
+ - IP-CIDR,174.36.228.0/24,🔰 选择节点
+ - IP-CIDR,174.37.54.0/24,🔰 选择节点
+ - IP-CIDR,174.37.154.0/24,🔰 选择节点
+ - IP-CIDR,174.37.175.0/24,🔰 选择节点
+ - IP-CIDR,174.37.243.0/24,🔰 选择节点
+ - IP-CIDR,179.60.193.0/24,🔰 选择节点
+ - IP-CIDR,182.50.139.0/24,🔰 选择节点
+ - IP-CIDR,184.72.1.0/24,🔰 选择节点
+ - IP-CIDR,184.173.136.0/24,🔰 选择节点
+ - IP-CIDR,185.45.6.0/23,🔰 选择节点
+ - IP-CIDR,185.60.216.0/24,🔰 选择节点
+ - IP-CIDR,185.60.218.0/23,🔰 选择节点
+ - IP-CIDR,192.133.77.0/24,🔰 选择节点
+ - IP-CIDR,198.27.124.0/24,🔰 选择节点
+ - IP-CIDR,198.44.185.0/24,🔰 选择节点
+ - IP-CIDR,199.16.156.0/24,🔰 选择节点
+ - IP-CIDR,199.16.158.0/24,🔰 选择节点
+ - IP-CIDR,199.59.148.0/23,🔰 选择节点
+ - IP-CIDR,199.59.150.0/24,🔰 选择节点
+ - IP-CIDR,199.96.58.0/23,🔰 选择节点
+ - IP-CIDR,199.96.61.0/24,🔰 选择节点
+ - IP-CIDR,199.96.62.0/23,🔰 选择节点
+ - IP-CIDR,199.193.116.0/24,🔰 选择节点
+ - IP-CIDR,202.53.137.0/24,🔰 选择节点
+ - IP-CIDR,202.160.128.0/23,🔰 选择节点
+ - IP-CIDR,202.160.130.0/24,🔰 选择节点
+ - IP-CIDR,202.182.98.0/24,🔰 选择节点
+ - IP-CIDR,203.111.254.0/24,🔰 选择节点
+ - IP-CIDR,204.79.197.0/24,🔰 选择节点
+ - IP-CIDR,205.186.152.0/24,🔰 选择节点
+ - IP-CIDR,208.31.254.0/24,🔰 选择节点
+ - IP-CIDR,208.43.170.0/24,🔰 选择节点
+ - IP-CIDR,208.43.237.0/24,🔰 选择节点
+ - IP-CIDR,208.77.47.0/24,🔰 选择节点
+ - IP-CIDR,208.101.21.0/24,🔰 选择节点
+ - IP-CIDR,208.101.60.0/24,🔰 选择节点
+ - IP-CIDR,209.95.56.0/24,🔰 选择节点
+ - IP-CIDR,210.56.51.0/24,🔰 选择节点
+ - IP-CIDR,210.209.84.0/24,🔰 选择节点
+ - IP-CIDR,211.104.160.0/24,🔰 选择节点
+ - IP-CIDR,243.185.187.0/24,🔰 选择节点
  - GEOIP,CN,🇨🇳 国内网站
  - DOMAIN-KEYWORD,.,🐟 漏网之鱼
  - MATCH,🐟 漏网之鱼
