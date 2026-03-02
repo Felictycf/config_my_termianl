@@ -86,7 +86,7 @@ Notable custom keybindings (see `lua/config/keymaps.lua`):
 - Picker: Telescope (`vim.g.lazyvim_picker = "telescope"`)
 - Completion: blink.cmp (`vim.g.lazyvim_cmp = "blink.cmp"`)
 - Prettier: Requires config file (`vim.g.lazyvim_prettier_needs_config = true`)
-- Colorscheme: solarized-osaka
+- Colorscheme: catppuccin (mocha)
 - Dev plugins path: `~/.ghq/github.com`
 - Terminal: Uses toggleterm.nvim (floating terminal with session persistence)
 - File Browser: Uses Telescope file browser extension

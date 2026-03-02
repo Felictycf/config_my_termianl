@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(~/.config/tmux/plugins/tpm/bin/install_plugins:*)",
+      "Bash(~/.config/tmux/plugins/tpm/bin/clean_plugins:*)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "n8n-mcp"
+  ]
+}

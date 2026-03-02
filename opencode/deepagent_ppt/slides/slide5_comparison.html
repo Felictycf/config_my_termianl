@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F4F6F6;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  background: #277884;
+  padding: 16pt 40pt;
+}
+h1 {
+  color: #FFFFFF;
+  font-size: 24pt;
+  margin: 0;
+}
+.content {
+  padding: 25pt;
+  flex: 1;
+}
+.table-container {
+  background: #FFFFFF;
+  border-radius: 6pt;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  padding: 20pt;
+}
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.table th {
+  background: #2E4053;
+  color: #FFFFFF;
+  font-size: 15pt;
+  padding: 12pt 15pt;
+  text-align: left;
+  font-weight: bold;
+}
+.table th:first-child {
+  border-radius: 6pt 0 0 0;
+}
+.table th:last-child {
+  border-radius: 0 6pt 0 0;
+}
+.table td {
+  padding: 10pt 15pt;
+  font-size: 13pt;
+  color: #2E4053;
+  vertical-align: top;
+  border-bottom: 1pt solid #E0E0E0;
+}
+.table tr:last-child td {
+  border-bottom: none;
+}
+.badge {
+  background: #C0392B;
+  color: #FFFFFF;
+  padding: 3pt 8pt;
+  border-radius: 10pt;
+  font-size: 11pt;
+  font-weight: bold;
+}
+.badge-new {
+  background: #5EA8A7;
+  color: #FFFFFF;
+  padding: 3pt 8pt;
+  border-radius: 10pt;
+  font-size: 11pt;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>传统 AI vs DeepAgent</h1>
+</div>
+<div class="content">
+  <div class="table-container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>维度</th>
+          <th>传统 AI 助手</th>
+          <th>DeepAgent</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>响应方式</b></td>
+          <td>单轮响应,回答独立问题</td>
+          <td><span class="badge-new">多步骤推理</span>,规划执行工作流</td>
+        </tr>
+        <tr>
+          <td><b>状态管理</b></td>
+          <td>无状态,每次对话独立</td>
+          <td><span class="badge-new">持久化记忆</span>,跨会话知识积累</td>
+        </tr>
+        <tr>
+          <td><b>工具能力</b></td>
+          <td>有限的工具调用,预定义函数</td>
+          <td><span class="badge-new">动态工具发现</span>,可扩展工具系统</td>
+        </tr>
+        <tr>
+          <td><b>任务规划</b></td>
+          <td><span class="badge">无规划能力</span>,线性执行</td>
+          <td><span class="badge-new">自主任务分解</span>,并行子代理委托</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "notionApi": {
+      "command": "/Users/felicity/.nvm/versions/node/v20.19.2/bin/notion-mcp-server",
+      "args": [],
+      "env": {
+        "NOTION_API_KEY": "",
+        "NOTION_ROOT_PAGE_ID": ""
+      }
+    }
+  }
+}

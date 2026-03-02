@@ -8,5 +8,7 @@
     ],
     "deny": [],
     "ask": []
-  }
+  },
+  "enabledMcpjsonServers": [],
+  "enableAllProjectMcpServers": false
 }
