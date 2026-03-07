@@ -27,52 +27,52 @@ Rules:
   - DOMAIN-SUFFIX,time.is,DIRECT
   - MATCH,DIRECT
 proxies:
-  - {name: 🇭🇰 香港Z01, server: 8.u.9.y.x.h.2.8.d.hk01-ae5.entry.v51124-4.qpon, port: 19274, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇯🇵 日本Z01 | IEPL, server: 8.x.b.5.o.3.2.8.d.jp01-ae5.entry.v51124-4.qpon, port: 475, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇭🇰 香港Z02 | IEPL, server: 8.h.9.5.s.3.n.8.d.hk02-ae5.entry.v51124-4.qpon, port: 14562, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇯🇵 日本Z02 | IEPL, server: 8.u.l.y.x.h.6.8.d.jp02-ae5.entry.v51124-4.qpon, port: 485, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇭🇰 香港Z03 | IEPL, server: v.h.9.y.s.8.6.8.d.hk03-ae5.entry.v51124-4.qpon, port: 762, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇯🇵 日本Z03 | IEPL, server: j.u.9.5.o.3.a.8.d.jp03-ae5.entry.v51124-4.qpon, port: 490, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇭🇰 香港Z04 | IEPL, server: v.h.r.2.x.h.n.8.d.hk04-ae5.entry.v51124-4.qpon, port: 806, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇯🇵 日本Z04 | IEPL, server: v.u.l.2.s.h.n.8.d.jp04-ae5.entry.v51124-4.qpon, port: 495, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇭🇰 香港Z05 | IEPL, server: z.u.r.2.o.3.n.8.d.hk05-ae5.entry.v51124-4.qpon, port: 1814, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇯🇵 日本Z05 | 下载专用 | x0.01, server: ju9yoh2-g04.jp05-vm5.entry.rtysjur.quest, port: 64657, type: vmess, uuid: cb1c2e22-0190-3105-b079-ac1440fa4280, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港Z06 | x0.8, server: z.h.9.y.p.8.n.8.d.hk06-ae5.entry.v51124-4.qpon, port: 1415, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇯🇵 日本Z06 | 下载专用 | x0.01, server: vur2s6n-g04.jp06-vm5.entry.rtysjur.quest, port: 665, type: vmess, uuid: cb1c2e22-0190-3105-b079-ac1440fa4280, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港Z07 | x0.8, server: j.u.9.2.x.3.2.8.d.hk07-ae5.entry.v51124-4.qpon, port: 1422, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇯🇵 日本Z07 | IEPL, server: 8.u.b.5.s.h.6.8.d.jp07-ae5.entry.v51124-4.qpon, port: 14007, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇭🇰 香港Z08 | x0.8, server: z.x.l.y.s.8.a.8.d.hk08-ae5.entry.v51124-4.qpon, port: 18645, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇯🇵 日本Z08 | IEPL, server: j.x.r.2.s.3.a.8.d.jp08-ae5.entry.v51124-4.qpon, port: 12545, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇭🇰 香港Z09 | IEPL, server: j.u.9.5.o.h.6.8.d.hk09-vm5.entry.v51124-4.qpon, port: 15267, type: vmess, uuid: cb1c2e22-0190-3105-b079-ac1440fa4280, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 日本Z09 | IEPL, server: 8.x.9.y.o.h.2.8.d.jp09-ae5.entry.v51124-4.qpon, port: 11160, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇭🇰 香港Z10 | IEPL, server: 8.x.l.y.x.6.a.8.d.hk10-vm5.entry.v51124-4.qpon, port: 13485, type: vmess, uuid: cb1c2e22-0190-3105-b079-ac1440fa4280, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: speedtest-bgp-01-10.entry-0.chinasnow.net}}, udp: true}
-  - {name: 🇯🇵 日本Z10 | IEPL, server: 8.x.b.5.s.h.2.8.d.jp10-ae5.entry.v51124-4.qpon, port: 16526, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇭🇰 香港Z11 | IEPL, server: j.u.9.5.x.8.n.8.d.hk11-vm5.entry.v51124-4.qpon, port: 577, type: vmess, uuid: cb1c2e22-0190-3105-b079-ac1440fa4280, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tutorial/iphone13.m3u8, headers: {Host: speedtest-bgp-01-11.entry-0.chinasnow.net}}, udp: true}
-  - {name: 🇯🇵 日本Z11 | IEPL, server: v.x.9.y.x.3.a.8.d.jp11-ae5.entry.v51124-4.qpon, port: 17743, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇸🇬 新加坡Z01 | IEPL | x2, server: 8.h.b.5.s.8.6.8.d.sg01-ae5.entry.v51124-4.qpon, port: 20002, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇸🇬 新加坡Z02 | IEPL | x2, server: 8.x.l.2.o.6.a.8.d.sg02-ae5.entry.v51124-4.qpon, port: 20077, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇸🇬 新加坡Z03 | IEPL | x2, server: z.u.b.2.p.h.2.8.d.sg03-ae5.entry.v51124-4.qpon, port: 20082, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇨🇳 台湾Z01 | IEPL | x2, server: z.x.9.2.s.8.a.8.d.tw01-ae5.entry.v51124-4.qpon, port: 20007, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇺🇲 美国Z01 | IEPL | x1.5, server: z.h.r.2.o.6.a.8.d.us01-ae5.entry.v51124-4.qpon, port: 20012, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇺🇲 美国Z02 | IEPL | x1.5, server: 8.h.l.5.s.3.a.8.d.us02-ae5.entry.v51124-4.qpon, port: 20017, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇬🇧 英国Z01, server: v.h.9.5.x.6.a.8.d.gb01-ae5.entry.v51124-4.qpon, port: 20022, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇦🇷 阿根廷Z01, server: 8.u.b.y.x.h.a.8.d.ar01-ae5.entry.v51124-4.qpon, port: 20027, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇷🇺 俄罗斯Z01, server: 8.u.9.y.p.3.a.8.d.ru01-ae5.entry.v51124-4.qpon, port: 20032, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇹🇷 土耳其Z01, server: z.u.l.2.x.6.2.8.d.tr01-ae5.entry.v51124-4.qpon, port: 20037, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇰🇷 韩国Z01, server: 8.h.9.2.s.6.n.8.d.kr01-ae5.entry.v51124-4.qpon, port: 20042, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇮🇳 印度Z01, server: 8.h.b.y.x.3.6.8.d.in01-ae5.entry.v51124-4.qpon, port: 20047, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇩🇪 德国Z01, server: j.h.r.5.o.8.n.8.d.de01-ae5.entry.v51124-4.qpon, port: 20052, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇨🇦 加拿大Z01, server: 8.x.9.5.o.h.a.8.d.ca01-ae5.entry.v51124-4.qpon, port: 20057, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇦🇺 澳大利亚Z01, server: v.x.r.2.s.8.n.8.d.au01-ae5.entry.v51124-4.qpon, port: 20062, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇫🇷 法国Z01, server: j.x.9.2.x.6.6.8.d.fr01-ae5.entry.v51124-4.qpon, port: 20067, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇺🇦 乌克兰Z01, server: 8.h.b.y.p.3.a.8.d.ua01-ae5.entry.v51124-4.qpon, port: 20072, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
-  - {name: 🇯🇵 免费-日本1-Ver.7, server: jul2sh2-g04.jp01-nn-vm0.entry.fr0528.art, port: 21584, type: vmess, uuid: cb1c2e22-0190-3105-b079-ac1440fa4280, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 免费-日本2-Ver.8, server: jul2p3a-g04.jp02-e3-vm0.entry.fr0528.art, port: 11776, type: vmess, uuid: cb1c2e22-0190-3105-b079-ac1440fa4280, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 免费-日本3-Ver.7, server: vxl5p82-g04.jp03-j7-vm0.entry.fr0528.art, port: 21584, type: vmess, uuid: cb1c2e22-0190-3105-b079-ac1440fa4280, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 免费-日本4-Ver.8, server: vxr2p3n-g04.jp04-1d-vm0.entry.fr0528.art, port: 447, type: vmess, uuid: cb1c2e22-0190-3105-b079-ac1440fa4280, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 免费-日本5-Ver.9, server: 8ulyx86-g04.jp05-h6-vm0.entry.fr0528.art, port: 46485, type: vmess, uuid: cb1c2e22-0190-3105-b079-ac1440fa4280, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 免费-日本6-Ver.8, server: 8xl5shn-g04.jp06-jz-vm0.entry.fr0528.art, port: 28786, type: vmess, uuid: cb1c2e22-0190-3105-b079-ac1440fa4280, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 免费-日本7-Ver.2, server: vu95p66-g04.jp07-sh-vm0.entry.fr0528.art, port: 28786, type: vmess, uuid: cb1c2e22-0190-3105-b079-ac1440fa4280, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港Z01, server: 8.u.9.5.o.6.a.8.d.hk01-ae5.entry.v51124-4.qpon, port: 19274, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇯🇵 日本Z01 | IEPL, server: z.u.b.5.o.3.a.8.d.jp01-ae5.entry.v51124-4.qpon, port: 475, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇭🇰 香港Z02 | IEPL, server: z.x.9.y.o.6.2.8.d.hk02-ae5.entry.v51124-4.qpon, port: 14562, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇯🇵 日本Z02 | IEPL, server: j.h.r.2.x.6.a.8.d.jp02-ae5.entry.v51124-4.qpon, port: 485, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇭🇰 香港Z03 | IEPL, server: 8.u.9.2.o.h.2.8.d.hk03-ae5.entry.v51124-4.qpon, port: 762, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇯🇵 日本Z03 | IEPL, server: z.h.b.y.p.6.a.8.d.jp03-ae5.entry.v51124-4.qpon, port: 490, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇭🇰 香港Z04 | IEPL, server: z.x.r.y.s.8.6.8.d.hk04-ae5.entry.v51124-4.qpon, port: 806, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇯🇵 日本Z04 | IEPL, server: j.u.b.5.o.3.a.8.d.jp04-ae5.entry.v51124-4.qpon, port: 495, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇭🇰 香港Z05 | IEPL, server: v.x.l.5.s.8.a.8.d.hk05-ae5.entry.v51124-4.qpon, port: 1814, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇯🇵 日本Z05 | 下载专用 | x0.01, server: 8hr2xhn-g04.jp05-vm5.entry.rtysjur.quest, port: 64657, type: vmess, uuid: cb1c2e22-0190-3105-b079-ac1440fa4280, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港Z06 | x0.8, server: 8.h.9.y.s.8.2.8.d.hk06-ae5.entry.v51124-4.qpon, port: 1415, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇯🇵 日本Z06 | 下载专用 | x0.01, server: jhryo8n-g04.jp06-vm5.entry.rtysjur.quest, port: 665, type: vmess, uuid: cb1c2e22-0190-3105-b079-ac1440fa4280, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港Z07 | x0.8, server: 8.u.9.2.p.8.n.8.d.hk07-ae5.entry.v51124-4.qpon, port: 1422, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇯🇵 日本Z07 | IEPL, server: j.x.l.y.x.3.a.8.d.jp07-ae5.entry.v51124-4.qpon, port: 14007, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇭🇰 香港Z08 | x0.8, server: z.u.b.2.p.8.a.8.d.hk08-ae5.entry.v51124-4.qpon, port: 18645, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇯🇵 日本Z08 | IEPL, server: z.h.b.5.p.6.n.8.d.jp08-ae5.entry.v51124-4.qpon, port: 12545, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇭🇰 香港Z09 | IEPL, server: j.h.l.5.x.6.2.8.d.hk09-vm5.entry.v51124-4.qpon, port: 15267, type: vmess, uuid: cb1c2e22-0190-3105-b079-ac1440fa4280, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本Z09 | IEPL, server: 8.u.9.2.o.h.n.8.d.jp09-ae5.entry.v51124-4.qpon, port: 11160, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇭🇰 香港Z10 | IEPL, server: j.u.9.5.o.h.2.8.d.hk10-vm5.entry.v51124-4.qpon, port: 13485, type: vmess, uuid: cb1c2e22-0190-3105-b079-ac1440fa4280, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: speedtest-bgp-01-10.entry-0.chinasnow.net}}, udp: true}
+  - {name: 🇯🇵 日本Z10 | IEPL, server: j.h.9.2.x.h.n.8.d.jp10-ae5.entry.v51124-4.qpon, port: 16526, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇭🇰 香港Z11 | IEPL, server: v.u.l.2.x.3.a.8.d.hk11-vm5.entry.v51124-4.qpon, port: 577, type: vmess, uuid: cb1c2e22-0190-3105-b079-ac1440fa4280, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tutorial/iphone13.m3u8, headers: {Host: speedtest-bgp-01-11.entry-0.chinasnow.net}}, udp: true}
+  - {name: 🇯🇵 日本Z11 | IEPL, server: j.u.b.y.s.h.2.8.d.jp11-ae5.entry.v51124-4.qpon, port: 17743, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇸🇬 新加坡Z01 | IEPL | x2, server: j.h.9.5.x.6.n.8.d.sg01-ae5.entry.v51124-4.qpon, port: 20002, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇸🇬 新加坡Z02 | IEPL | x2, server: j.u.l.2.s.h.n.8.d.sg02-ae5.entry.v51124-4.qpon, port: 20077, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇸🇬 新加坡Z03 | IEPL | x2, server: 8.x.9.2.o.h.a.8.d.sg03-ae5.entry.v51124-4.qpon, port: 20082, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇨🇳 台湾Z01 | IEPL | x2, server: j.h.b.2.o.8.6.8.d.tw01-ae5.entry.v51124-4.qpon, port: 20007, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇺🇲 美国Z01 | IEPL | x1.5, server: v.x.l.y.p.8.n.8.d.us01-ae5.entry.v51124-4.qpon, port: 20012, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇺🇲 美国Z02 | IEPL | x1.5, server: z.x.9.y.x.8.6.8.d.us02-ae5.entry.v51124-4.qpon, port: 20017, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇬🇧 英国Z01, server: 8.x.r.2.x.6.6.8.d.gb01-ae5.entry.v51124-4.qpon, port: 20022, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇦🇷 阿根廷Z01, server: v.h.r.2.x.6.6.8.d.ar01-ae5.entry.v51124-4.qpon, port: 20027, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇷🇺 俄罗斯Z01, server: v.h.9.2.o.h.6.8.d.ru01-ae5.entry.v51124-4.qpon, port: 20032, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇹🇷 土耳其Z01, server: 8.u.9.y.o.3.n.8.d.tr01-ae5.entry.v51124-4.qpon, port: 20037, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇰🇷 韩国Z01, server: v.x.l.5.x.3.2.8.d.kr01-ae5.entry.v51124-4.qpon, port: 20042, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇮🇳 印度Z01, server: 8.h.9.5.o.6.n.8.d.in01-ae5.entry.v51124-4.qpon, port: 20047, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇩🇪 德国Z01, server: v.u.l.5.o.3.6.8.d.de01-ae5.entry.v51124-4.qpon, port: 20052, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇨🇦 加拿大Z01, server: z.x.9.5.p.8.2.8.d.ca01-ae5.entry.v51124-4.qpon, port: 20057, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇦🇺 澳大利亚Z01, server: z.u.9.y.x.h.6.8.d.au01-ae5.entry.v51124-4.qpon, port: 20062, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇫🇷 法国Z01, server: v.x.r.5.p.6.a.8.d.fr01-ae5.entry.v51124-4.qpon, port: 20067, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇺🇦 乌克兰Z01, server: 8.x.r.5.x.3.n.8.d.ua01-ae5.entry.v51124-4.qpon, port: 20072, type: ss, cipher: aes-256-gcm, password: cb1c2e22-0190-3105-b079-ac1440fa4280, udp: true}
+  - {name: 🇯🇵 免费-日本1-Ver.7, server: 8hb5x86-g04.jp01-nn-vm0.entry.fr0528.art, port: 21584, type: vmess, uuid: cb1c2e22-0190-3105-b079-ac1440fa4280, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 免费-日本2-Ver.8, server: zxbyo6n-g04.jp02-e3-vm0.entry.fr0528.art, port: 11776, type: vmess, uuid: cb1c2e22-0190-3105-b079-ac1440fa4280, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 免费-日本3-Ver.7, server: 8ur2o32-g04.jp03-j7-vm0.entry.fr0528.art, port: 21584, type: vmess, uuid: cb1c2e22-0190-3105-b079-ac1440fa4280, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 免费-日本4-Ver.8, server: vurys6a-g04.jp04-1d-vm0.entry.fr0528.art, port: 447, type: vmess, uuid: cb1c2e22-0190-3105-b079-ac1440fa4280, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 免费-日本5-Ver.9, server: zul5x8n-g04.jp05-h6-vm0.entry.fr0528.art, port: 46485, type: vmess, uuid: cb1c2e22-0190-3105-b079-ac1440fa4280, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 免费-日本6-Ver.8, server: 8hryo62-g04.jp06-jz-vm0.entry.fr0528.art, port: 28786, type: vmess, uuid: cb1c2e22-0190-3105-b079-ac1440fa4280, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 免费-日本7-Ver.2, server: vhb2p6n-g04.jp07-sh-vm0.entry.fr0528.art, port: 28786, type: vmess, uuid: cb1c2e22-0190-3105-b079-ac1440fa4280, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🔰 选择节点
     type: select

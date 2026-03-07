@@ -17,8 +17,8 @@
   "ui_font_size": 16,
   "buffer_font_size": 15,
   "theme": {
-    "mode": "dark",
-    "light": "Gruvbox Dark",
+    "mode": "system",
+    "light": "One Dark Pro",
     "dark": "One Dark Pro"
   }
 }
